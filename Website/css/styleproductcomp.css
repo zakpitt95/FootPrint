@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
+header, footer, nav, section, article, main {
+	display: block;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+	
+}
+body {
+	background-color: #A8A8A8;
+	height: 100%;
+}
+/* Header */
+header {
+	width: 100%;
+	height: auto;
+	background-color: #272727;
+	text-align: center;
+}
+#titlebox {
+	width: auto;
+	height: auto;
+	font-family: 'Arimo';
+	font-size: 30px;
+	font-weight: bold;
+    color: #ffffff;
+    
+}
+/* Reusable Container */
+.container {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+}
+/* Navigation Bar */
+nav {
+	width: 100%;
+	height: auto;
+    background: #747474;
+    text-align:center;
+    list-style-type:none;
+}
+a:link {
+	color: #F8FF00;
+	text-decoration: none;
+}
+a:visited {
+	color: #F8FF00;
+}
+a:hover {
+	color: #EFEFEF;
+}
+#nav li {
+	display: inline-block;
+	
+}
+#nav li a {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	background: #747474;
+	color: #FFFFFF;
+	width: 140px;
+	text-align: center;
+	font-family: Roboto;
+}
+#nav li a:hover {
+	background-color: #FFE400;
+	color: #272727;
+}
+/* Main Body */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* Columns for grid */
+[class*="col-"] {
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    margin:5px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Reusable Text Boxes */
+.text {
+	width: auto;
+	height: auto;
+	padding: 4px;
+	font-family: roboto;
+	font-size: 16px;
+	text-align: center;
+    background-color: #747474;
+    color: #ffffff;
+}
+
+.gridTitle{
+	width:auto;
+	height:auto;
+	padding:5px;
+	font-family: roboto;
+	font-size: 30px;
+	text-align: center;
+	background-color: #ffe400;
+	color: black;
+}
+/* Footer */
+footer {
+	width: 100%;
+	height: auto;
+	background-color: #232828;
+	position: absolute;
+	bottom: 0;
+}
+
