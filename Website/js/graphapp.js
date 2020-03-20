@@ -7,7 +7,6 @@ $(document).ready(function(){
       function (data)
       {
         var JSONdata = JSON.parse(data)
-        console.log(JSONdata);
         var date = [];
         var carbon_output = [];
 

@@ -7,7 +7,8 @@ if (isset($_GET['submit'])) {
   error_reporting(0);
 
   //Google Place API call and retrieval of necessary data
-  $location_data = file_get_contents('https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' . urlencode($location) . '&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=AIzaSyDY3jpuZRxi2Vz4_r1AtQM3hX3JGH4NPqc');
+  $location_data = file_get_contents('https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' . 
+  urlencode($location) . '&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=AIzaSyDY3jpuZRxi2Vz4_r1AtQM3hX3JGH4NPqc');
   $location_arr = json_decode($location_data);
   $formatted_address = $location_arr->candidates[0]->formatted_address;
   $name = $location_arr->candidates[0]->name;
@@ -88,7 +89,7 @@ if (isset($_GET['submit'])) {
                 var marker = new google.maps.Marker({
                   position: myLatLng,
                   map: map,
-                  title: 'Hello World!'
+                  title: ''
                 });
               }
             </script>

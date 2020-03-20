@@ -12,7 +12,6 @@ if(isset($_POST['search'])){
         $response[] = array("label"=>$row['name']);
     }
     echo json_encode($response);
-    //print json_encode($response);
 
 }
 ?>
