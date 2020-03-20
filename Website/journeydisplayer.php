@@ -79,9 +79,9 @@ if (isset($_GET['submit'])) {
     $destination3 = $_GET['destination3'];
 
     //Google Distance Matrix API Calls
-    $distance_data1 = file_get_contents('https://maps.googleapis.com/maps/api/distancematrix/json?&origins=' . urlencode($origin1) . '&destinations=' . urlencode($destination1) . '&key=AIzaSyDY3jpuZRxi2Vz4_r1AtQM3hX3JGH4NPqc');
-    $distance_data2 = file_get_contents('https://maps.googleapis.com/maps/api/distancematrix/json?&origins=' . urlencode($origin2) . '&destinations=' . urlencode($destination2) . '&key=AIzaSyDY3jpuZRxi2Vz4_r1AtQM3hX3JGH4NPqc');
-    $distance_data3 = file_get_contents('https://maps.googleapis.com/maps/api/distancematrix/json?&origins=' . urlencode($origin3) . '&destinations=' . urlencode($destination3) . '&key=AIzaSyDY3jpuZRxi2Vz4_r1AtQM3hX3JGH4NPqc');
+    $distance_data1 = file_get_contents('https://maps.googleapis.com/maps/api/distancematrix/json?&origins=' . urlencode($origin1) . '&destinations=' . urlencode($destination1) . '&key=API_KEY');
+    $distance_data2 = file_get_contents('https://maps.googleapis.com/maps/api/distancematrix/json?&origins=' . urlencode($origin2) . '&destinations=' . urlencode($destination2) . '&key=API_KEY');
+    $distance_data3 = file_get_contents('https://maps.googleapis.com/maps/api/distancematrix/json?&origins=' . urlencode($origin3) . '&destinations=' . urlencode($destination3) . '&key=API_KEY');
 
     //Store call data in arrays
     $distance_arr1 = json_decode($distance_data1);
